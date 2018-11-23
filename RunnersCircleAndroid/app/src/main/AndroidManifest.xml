@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keeganjebb.runnerscircleandroid">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Runners&apos; Circle"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".intro.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intro.RegisterActivity"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".intro.LoginActivity"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".home.GroupsActivity" />
+        <activity android:name=".home.TipsActivity" />
+        <activity android:name=".home.ProfileActivity" />
+        <activity
+            android:name=".home.AddGroupActivity"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".home.SearchGroupActivity" />
+        <activity
+            android:name=".run.RunTabActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <service android:name=".support.LocationUpdateService" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>

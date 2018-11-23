@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.AddGroupActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageViewAddGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/green_background" />
+
+    <EditText
+        android:id="@+id/newGroupNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Circle Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImageViewAddGroup" />
+
+    <EditText
+        android:id="@+id/memberCodeEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Member Entry Code"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newGroupNameEditText" />
+
+    <Button
+        android:id="@+id/registerCircleButton"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#2C2C2C"
+        android:onClick="registerCirclePressed"
+        android:text="Register Circle"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memberCodeEditText" />
+
+</android.support.constraint.ConstraintLayout>

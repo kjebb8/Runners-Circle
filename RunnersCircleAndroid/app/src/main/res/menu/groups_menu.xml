@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profile" android:title="Profile"></item>
+    <item android:id="@+id/feedback" android:title="Feedback"></item>
+    <item android:id="@+id/tips_info" android:title="Tips and Info"></item>
+    <item android:id="@+id/privacy_policy" android:title="Privacy Policy"></item>
+    <item android:id="@+id/logout" android:title="Log Out"></item>
+
+</menu>
